@@ -1,0 +1,414 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+:root {
+    background:white;
+    
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Montserrat Alternates', sans-serif;
+    background:white; 
+    margin: 0;
+
+
+}
+
+#header-img {
+    width: 100%;
+    height: auto;
+}
+
+
+#logo {
+    max-width: 20%;
+    height: auto;
+    
+}
+.nav-logo {
+    
+    list-style: none;
+}
+
+.nav-list {
+    background-color: goldenrod;
+    box-shadow: 0px 0px 10px;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    flex-wrap: wrap;
+    
+}
+
+.nav-link {
+    list-style: none;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+    transition: all 200ms ease-in;
+    
+}
+.nav-link:hover {
+    color: black;
+}
+
+.nav-link:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+.btn-signup {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+    background-color: rgb(21, 194, 194);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    color: white;
+}
+.btn-signup:hover {
+    background: white;
+    color: teal;
+}
+
+#course-vid {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+#course h1 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.text {
+    text-align: center;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    background: rgb(231, 174, 28);
+    width: 700px;
+    height: 150px;
+    padding: 1.6rem 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgb(80, 78, 73);
+    color: white;
+}
+
+#submit {
+    background: rgb(24, 170, 170);
+    border: none;
+    padding: 7px 15px;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+#email {
+    padding: 7px 14px;
+    margin-left: 16%;
+    margin-right: auto;
+
+}
+
+#submit:hover {
+    background: white;
+    color: rgb(26, 110, 110);
+    
+}
+
+.wiki {
+    font-size: 21px;
+    color: rgb(27, 175, 168);
+    font-style: italic bold;
+    margin-left: 43%;
+    background: teal;
+    color: white;
+    padding: 10px 10px;
+    
+}
+
+#the-course-text {
+    text-align: center;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+#poster {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: teal;
+    width: 420px;
+    margin: 100px auto;
+    cursor: grab;
+    box-shadow: 5px 5px goldenrod;
+}
+.poster-text {
+    text-align: center;
+    padding: 2px 2px;
+}
+#poster:hover {
+    opacity: 0.6;
+}
+
+#poster h2 {
+    color: goldenrod;
+    font-size: 50px;
+    font-style: bolder;
+}
+
+#soc-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+#soc-media h1 {
+    text-align: center;
+    margin: 20px 20px;
+}
+#contact h1 {
+    text-align: center;
+}
+
+.fa {
+  padding: 30px 30px;
+  font-size: 50px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  border-radius: 50%;
+  padding: 22px 10px 20px 12px;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  border-radius: 50%;
+  padding: 22px 10px 20px 12px;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #C13584;
+    color: white;
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 50%;
+    padding: 22px 10px 20px 12px;
+    text-decoration: none;
+    
+}
+
+label {
+    text-align: right;
+    margin-right: 40px;
+    font-size: 30px;
+    line-height: 50px;
+    height: 50px;
+    display: none; 
+}
+
+#toggle {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 992px) and (min-width: 220px) {
+    
+    label {
+        display: block;
+        cursor: pointer;
+        font-size: 10vw;
+        line-height: 7px;
+        height: 7px;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    label:hover {
+        color: black;
+        transition: all 0.3ms ease-in;
+        text-align: center;
+    }
+
+    .nav-link {
+        text-align: center;
+        width: 90%;
+        padding-bottom: 1rem;
+        display: none;
+    }
+    .nav-link a {
+        display: block;
+        margin: 0;
+        border-bottom: 1px solid black;
+    }
+
+    #toggle:checked + .nav-link {
+        display: block;
+    }
+
+    .nav-logo {
+        padding-left: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #header-img {
+        
+        width: 100%;
+    }
+
+    body {
+        font-size: 5vw;
+        
+        
+    }
+
+    #video {
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-height: 200px;
+        min-width: 90%;
+    }
+
+    #newsletter {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 95%;
+        max-width: 95%;  
+        display: flex; 
+        align-items: center;
+    }
+    #newsletter-text {
+        font-size: 5vw;
+        text-align: center;
+        min-width: 90%;
+        padding-top: 1rem;
+    }
+
+    #email {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 22%;
+        text-align: center;
+        max-height: 200px;
+        min-width: 200px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+
+    #submit {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.2rem;
+        margin-bottom: 1rem;
+        height: 25%;
+        padding-bottom: 0.5rem;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .wiki {
+        font-size: 5vw;
+        margin-left: 10%;       
+    }
+    
+    #the-course-text {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+        padding-top: 10%; 
+    }
+
+    .text {
+        margin-left: 5%;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    #poster {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .poster-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #contact > h1 {
+        text-align: center;
+    }
+
+    .fa {
+        max-width: 100%;
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: center;
+        max-height: 100%;
+    }
+    
+}
